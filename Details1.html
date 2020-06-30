@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="" bgcolor="grey" font-color="red">
+        <h1 align="center">Register Form</h1>
+
+    <table  border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+        <tr>
+            <td align='center'>First Name:</td>
+            <td><input type='text' pattern="[a-zA-Z]{4,15}" name='name'></td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+        <tr>
+            <td align='center'>Last Name:</td>
+            <td><input type='text' required name='lname'></td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+        <tr>
+            <td align='center'>Email:</td>
+            <td><input type='email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required name='email'></td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+        <tr>
+            <td align='center'>Website:</td>
+            <td><input type='url' required name='website'></td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+        <tr>
+            <td align='center'>Mobile:</td>
+            <td><input type='number' pattern="[789]{1}[0-9]{9}" required name='mobile'></td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+        <tr>
+            <td align='center'>Country</td>
+            <td>
+                <input type="text" name="" id="" list="source">
+                <datalist id="source">
+                    <option value="India"></option>
+                    <option value="USA"></option>
+                    <option value="UK"></option>
+                    <option value="France"></option>
+                    <option value="Japan"></option>
+                </datalist>
+            </td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+        <tr>
+            <td align='center'>PostCode:</td>
+            <td><input type='number' name='pcode'></td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+        <tr>
+            <td align='center'>Address:</td>
+            <td><input type='text' name='address'></td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+        <tr>
+            <td align='center'>Aggree to T&C:</td>
+            <td><input type='checkbox' name='tc'></td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+
+        <tr>
+            <td align='center'>General:</td>
+            <td>
+                <input type="radio" name="gender">Male &nbsp;
+
+                <input type="radio" name="gender" id="">Female
+            </td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+        <tr>
+            <td align='center'>Password:</td>
+            <td><input type='password' pattern="[a-z0-9]{5}[!@#$%]{1}" required name='password'></td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+        <tr>
+            <td align='center'><button>SIGNUP</button></td>
+        </tr>
+        <tr> <td>&nbsp;</td> </tr>
+
+
+    </table>
+    </form>
+
+</body>
+</html>

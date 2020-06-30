@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>User Information</title>
+</head>
+<body>
+    <form action="google.com">
+        <fieldset style="width:300px">
+            <table style="background-color:dimgrey;">
+                <tr>
+                    <td>Name</td>
+                    <td style="margin: 10px; padding: 20px;"><input placeholder="Enter your Name" autofocus required /></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td style="margin: 10px; padding: 20px;"><input placeholder="Enter your Age" required /></td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td style="margin: 10px; padding: 20px;"><input placeholder="Enter your Contact" pattern="[789]{1}[0-9]{9}" required /></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td style="margin: 10px; padding: 20px;">
+                        <input id="email" name="email"
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td style="margin: 10px; padding: 20px;"><input type="date" max="25-06-2020" /></td>
+                </tr>
+                <tr>
+                    <td>Website url</td>
+                    <td style="margin: 10px; padding: 20px;"><input placeholder="Enter Website" /></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td style="margin: 10px; padding: 20px;">
+                        <input type="text" name="" id="" list="source">
+                        <datalist id="source">
+                            <option value="India"></option>
+                            <option value="USA"></option>
+                            <option value="UK"></option>
+                            <option value="France"></option>
+                            <option value="Japan"></option>
+                            </datalist>
+                    </td>
+                    <!--<td>
+                        <select name="" id="">
+                            <option value="">India</option>
+                            <option value="">China</option>
+                            <option value="">Japan</option>
+                            <option value="">USA</option>
+                            <option value="">UK</option>
+                            <option value="">France</option>
+                        </select>
+                    </td>-->
+                </tr>
+            </table>
+            <button style="margin: 10px;" type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
